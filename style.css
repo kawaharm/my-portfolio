@@ -1,0 +1,27 @@
+:root {
+    --mainText: black;
+
+    --bg1: #fff7f7;
+    --bg2: turquoise;
+    
+    --borderColor: black;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3 {
+    color: var(mainText)
+}
+
+.s1 {
+    background-color: var(--bg1);
+    border: 1px solid var(--borderColor);
+}
+
+.s2 {
+    background-color: var(--bg2);
+    border: 1px solid var(--borderColor);
+}
