@@ -10,28 +10,110 @@
 </head>
 
 <body>
+    <header>
+        <div class="nav-container">
+            <nav class="nav" role="navigation">
+                <a href="#" class="nav-logo">masaru</a>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#projects" class="nav-link">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                </div>
 
+            </nav>
+        </div>
+    </header>
+
+    <!-- Introduction -->
     <section class="s1">
-        <div>
-            <h1>Hello I'm Masaru Kawaharada</h1>
-            <p>Welcome To My Website!</p>
-            <a href="#">
+        <div class="main-container">
+            <div class="greeting-wrapper">
+                <h1>Hello I'm Masaru Kawaharada</h1>
+                <p>Full-Stack Engineer</p>
+            </div>
         </div>
     </section>
 
+    <!-- About Me -->
     <section class="s2">
-        <div>
+        <div class="main-container">
             <h1>About</h1>
-            <p>Lorens Ipsum</p>
+            <p>
+                I’m an ambitious full-stack developer with a background in electrical engineering
+                dedicated to competing for an exciting career in today’s tech-driven world.
+                Creative and charismatic are what defines me and drives my passion for developing
+                innovative solutions using cutting-edge tools.
+            </p>
         </div>
     </section>
 
+    <!-- Projects -->
     <section class="s1">
-        <div>
+        <div class="main-container">
             <h1>Projects</h1>
-            <p>Lorens Ipsum</p>
+            <h3>Who Wants To Be A Pokemon Master</h3>
+            <p>
+                A trivia game built on Vanilla Javascript. A crossover of the hit tv show
+                Who Wants To Be A Millionaire and popular video game franchise Pokemon,
+                players take the hot seat against Regis Philbin as they answer multiple-choice
+                questions using a RPG battle system similar to the Generation I Pokemon games.
+            </p><br>
+
+            <h3>Campus Bops</h3>
+            <p>
+                Online platform for college students to vote for their favorite songs based on
+                categories using a NCAA Tournament-style voting system. Students Songs can be
+                previewed via Spotify API. Favorited songs and student accounts are stored in
+                database using PostreSQL.
+            </p><br>
+
+            <h3>NFT World</h3>
+            <p>
+                Explore NFT's on the Ethereum, Solana, and Cardano blockchain
+            </p>
+
+            <h3>Let's Stonk About It</h3>
+            <p>
+                Interactive data visualization tool to display the emotional impressions of a
+                company on Twitter using sentiment analysis and compare it with its stock
+                performance.
+            </p>
         </div>
     </section>
+
+    <!-- Contact -->
+    <section class="s2">
+        <div class="main-container">
+            <h1>Contact</h1>
+            <form>
+                <label>NAME:</label>
+                <input type="text" name="name">
+                <label>SUBJECT:</label>
+                <input type="text" name="subject">
+                <label>EMAIL:</label>
+                <input type="email" name="email">
+                <label>MESSAGE:</label>
+                <input type="text" name="message">
+                <button>SUBMIT</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="./script.js"></script>
 
 </body>
 
