@@ -24,6 +24,7 @@
     --fw-reg: 300;
     --fw-strong: 900;
 
+    --fs-title-big: 8rem;
     --fs-title: 5rem;
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -141,51 +142,14 @@ header {
     }
 }
 
+
 /* -------------------------- */
-/* -------- Greeting -------- */
+/* ---------- Main ---------- */
 /* -------------------------- */
 .main-container {
     display: flex;
     width: 1200px;
     margin: 0 auto;
-}
-
-.greeting-wrapper {
-    display: flex;
-    padding: 2rem;
-    height: 50%;
-    width: 50%;
-}
-
-.greeting-title {
-    position: relative;
-    font-family: var(--ff-secondary);
-    font-size: var(--fs-title);
-    color: var(--bg-primary);
-    background-color: var(--bg-secondary);
-    
-}
-
-/* To create two-tone lettering */
-.greeting-title .greeting-name {
-    position: absolute;
-    color: var(--secondaryText);
-    height: 50%;
-    overflow: hidden;
-    background-color: var(--bg-primary);
-}
-
-.greeting-description {
-    color: var(--secondaryText);
-    margin-top: 1rem;
-    font-size: 2rem;
-}
-
-.profile-pic {
-    width: 25%;
-    margin: 1rem;
-    border: 6px solid var(--borderColor);
-    border-radius: 50%;
 }
 
 .s1 {
@@ -200,8 +164,56 @@ header {
     border: 1px solid var(--borderColor);
     overflow: auto;
     padding: 2.5rem;
-
 }
+
+
+/* -------------------------- */
+/* -------- Greeting -------- */
+/* -------------------------- */
+.greeting-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.greeting-main-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.greeting-title {
+    font-family: var(--ff-secondary);
+    font-size: var(--fs-title);
+    /* border: 3px solid var(--secondaryText); */
+}
+
+.greeting-title-top {
+    color: var(--secondaryText);
+    padding: 0.5rem 1rem 0rem 1rem; 
+}
+
+.greeting-title-bottom {
+    color: var(--tertiaryText);
+    background: var(--bg-secondary);
+    padding: 1rem 1rem 0.5rem 1rem; 
+    border-bottom-left-radius: 30px; 
+    border-bottom-right-radius: 30px; 
+}
+
+.greeting-description {
+    color: var(--secondaryText);
+    margin-top: 1rem;
+    font-size: var(--fs-h2);
+}
+
+.profile-pic {
+    width: 25%;
+    margin: 1rem;
+    border: 6px solid var(--borderColor);
+    border-radius: 50%;
+}
+
 
 /* -------------------------- */
 /* --------- About --------- */
@@ -209,18 +221,40 @@ header {
 .about-wrapper {
     display: flex;
     flex-direction: row-reverse;
-    width: 1200px;
+    justify-content: center;
+    align-items: center;
     margin: 0 auto;
+    padding: 5rem 8rem;
 }
 
 .about-title {
-    font-size: var(--fs-title);
+    font-size: var(--fs-title-big);
 }
 
 .about-description {
     font-family: var(--ff-body);
-    padding: 5rem;
+    font-size: var(--fs-h3);
+    padding-left: 0;
+    padding-right: 1rem;
+    width: 500px;
     color: var(--tertiaryText);
+    line-height: 1.3;
+}
+
+
+/* -------------------------- */
+/* -------- Projects -------- */
+/* -------------------------- */
+.project-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 5rem 8rem;
+}
+
+.project-title {
+    font-size: var(--fs-title);
+    text-align: center;
 }
 
 /* -------------------------- */
@@ -231,7 +265,6 @@ header {
         width: 95%;
     }
 }
-
 
 @media screen and (max-width: 360px) {
 
