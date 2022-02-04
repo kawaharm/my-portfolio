@@ -5,13 +5,18 @@
 }
 
 :root {
-    --mainText: black;
+    --mainText: #272368;
+    --secondaryText: #ff4153;
 
-    --bg1: #fff7f7;
-    --bg2: turquoise;
+    --bg-primary: #fff7f7;
+    --bg-secondary: #ff4153;
 
-    --nav-clr-light: #fff;
-    --nav-clr-dark: #303030;
+    --clr-light: #fff;
+    --clr-dark: #303030;
+    --clr-active: #272368;
+
+    --ff-primary: 'Zen Kurenaido', sans-serif;
+    --ff-secondary: 'Yanone Kaffeesatz', sans-serif;
 
     --fw-reg: 300;
     --fw-strong: 900;
@@ -21,37 +26,31 @@
     --fs-h3: 1.5rem;
     --fs-body: 1rem;
 
-    --borderColor: black;
+    --borderColor: #272368;
 }
 
 /* ****************** */
 /* Set @media roots for changing font sizes */
 /* ****************** */
 
-
-/* ----- Header ----- */
-
+h1, h2, h3 {
+    color: var(--mainText);
+    font-family: var(--ff-secondary);
+}
+/* -------------------------- */
+/* --------- Header --------- */
+/* -------------------------- */
 header {
     border-bottom: 1px solid #E2E8F0;
 }
 
 .nav {
-    /* position: fixed;
-    background: var(--nav-clr-dark);
-    color: var(--nav-clr-light);
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 100;
-
-    transform: translate(50%);
-    transition: transform 250ms cubic-bezier(0.5, 0, 0.5, 1) */
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    background: var(--nav-clr-light);
+    background: var(--clr-light);
+    font-family: var(--ff-primary);
 }
 
 .nav-list {
@@ -61,20 +60,20 @@ header {
     list-style: none;
 }
 
-.nav-link {
-    color: var(--nav-clr-dark);
-    text-decoration: none;
-    font-size: var(--fs-h3);
-    font-weight: var(--fw-reg);
-}
-
 .nav-item {
     margin-left: 5px;
     margin-right: 5px;
 }
 
+.nav-link {
+    color: var(--clr-dark);
+    text-decoration: none;
+    font-size: var(--fs-h3);
+    font-weight: var(--fw-strong);
+}
+
 .nav-link:hover {
-    color: var(--nav-clr-dark);
+    color: var(--clr-active);
 }
 
 .hamburger {
@@ -91,18 +90,60 @@ header {
     background-color: #101010;
 }
 
-
-h1, h2, h3 {
-    color: var(mainText)
-}
-
-
-
+/* -------------------------- */
+/* -------- Greeting -------- */
+/* -------------------------- */
 .main-container {
     width: 1200px;
     margin: 0 auto;
 }
 
+.greeting-wrapper {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    border: 6px solid var(--borderColor);
+    padding: 2rem;
+    height: 50%;
+    width: 50%;
+}
+
+.greeting-title {
+    position: relative;
+    font-family: var(--ff-secondary);
+    font-size: 5rem;
+    color: var(--bg-primary);
+    background-color: var(--bg-secondary);
+    
+}
+
+.greeting-title .greeting-name {
+    position: absolute;
+    font-size: 5rem;
+    color: var(--secondaryText);
+    height: 50%;
+    overflow: hidden;
+    background-color: var(--bg-primary);
+}
+
+.s1 {
+    background-color: var(--bg-primary);
+    border: 1px solid var(--borderColor);
+    overflow: auto;
+    padding: 2.5rem;
+}
+
+.s2 {
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--borderColor);
+    overflow: auto;
+    padding: 2.5rem;
+
+}
+
+/* -------------------------- */
+/* ----- Responsiveness ----- */
+/* -------------------------- */
 @media screen and (max-width: 1200px) {
     .main-container {
         width: 95%;
@@ -110,17 +151,17 @@ h1, h2, h3 {
 }
 
 @media screen and (max-width: 768px) {
-    .nav-container .nav-list {
+    .nav-list {
         position: fixed;
         right: -100%;
         top: 5rem;
         flex-direction: column;
-        background: var(--nav-clr-dark);
+        background: var(--clr-dark);
         width: 100%;
         border-radius: 10px;
         text-align: center;
         transition: 0.5s;
-        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        /* box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05); */
     }
 
     .nav-list.active {
@@ -132,7 +173,7 @@ h1, h2, h3 {
     }
 
     .nav-link {
-        color: var(--nav-clr-light);
+        color: var(--clr-light);
     }
 
     .hamburger {
@@ -159,23 +200,3 @@ h1, h2, h3 {
 
 }
 
-.greeting-wrapper {
-    display: grid;
-    justify-content: center;
-    text-align: center;
-    
-    border: 1px dashed lightcoral;
-}
-
-.s1 {
-    background-color: var(--bg1);
-    border: 1px solid var(--borderColor);
-    overflow: auto;
-}
-
-.s2 {
-    background-color: var(--bg2);
-    border: 1px solid var(--borderColor);
-    overflow: auto;
-
-}
