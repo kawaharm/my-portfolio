@@ -38,10 +38,16 @@
 /* Set @media roots for changing font sizes */
 /* ****************** */
 
-h1, h2, h3 {
+h1, h2, h3, h4, h5 {
     color: var(--mainText);
     font-family: var(--ff-secondary);
 }
+
+p {
+    color: var(--mainText);
+    font-family: var(--ff-body);
+}
+
 /* -------------------------- */
 /* --------- Header --------- */
 /* -------------------------- */
@@ -147,7 +153,6 @@ header {
 /* ---------- Main ---------- */
 /* -------------------------- */
 .main-container {
-    display: flex;
     width: 1200px;
     margin: 0 auto;
 }
@@ -246,15 +251,56 @@ header {
 /* -------- Projects -------- */
 /* -------------------------- */
 .project-wrapper {
-    display: flex;
-    flex-direction: column;
     margin: 0 auto;
-    padding: 5rem 8rem;
 }
 
 .project-title {
     font-size: var(--fs-title);
     text-align: center;
+}
+
+.post-wrapper {
+    display: grid;
+    vertical-align: baseline;
+    padding: 0 5rem;
+}
+
+.post {
+    display: flex;
+    vertical-align: baseline;
+    margin-top: 40px;
+}
+
+.thumbnail {
+    display: block;
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.post-texts {
+    margin-left: 25px;
+}
+
+.post-title {
+    font-family: var(--ff-body);
+    font-size: var(--fs-h2);
+}
+
+.post-tech {
+    font-family: var(--ff-body);
+    font-size: var(--fs-h3);
+    margin: 10px 0;
+}
+
+.post-description {
+    font-size: var(--fs-body);
+    margin: 10px 0;
+}
+
+.tech-stack {
+    color: #9B48FF;
 }
 
 /* -------------------------- */
