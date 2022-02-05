@@ -20,7 +20,6 @@
     --ff-secondary: 'Yanone Kaffeesatz', sans-serif;
     --ff-body: 'Questrial', sans-serif;
 
-
     --fw-reg: 300;
     --fw-strong: 900;
 
@@ -32,6 +31,7 @@
     --fs-body: 1rem;
 
     --borderColor: #272368;
+    --btn-color: #272368;
 }
 
 /* ****************** */
@@ -301,6 +301,61 @@ header {
 
 .tech-stack {
     color: #9B48FF;
+}
+
+
+/* -------------------------- */
+/* -------- Contact --------- */
+/* -------------------------- */
+.contact-wrapper {
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact-title {
+    display: block;
+    font-size: var(--fs-title-big);
+    justify-self: center;
+    align-self: center;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+}
+
+.contact-field {
+    width: 100%;
+    padding: 5px 10px;
+    margin: 7px auto;
+    border-radius: 5px;
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-strong);
+    font-size: 16px;
+}
+
+label {
+    font-family: var(--ff-body);
+    font-size: var(--fs-body);
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.submit-btn {
+    font-family: var(--ff-body);
+    font-size: var(--fs-body);
+    margin-top: 10px;
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom:10px; 
+	color: #fff;
+	background-color: var(--btn-color);
+	border-radius: 10px;
 }
 
 /* -------------------------- */
