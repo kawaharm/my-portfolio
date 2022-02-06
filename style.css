@@ -234,6 +234,7 @@ header {
 
 .about-title {
     font-size: var(--fs-title-big);
+    text-shadow: 6px 3px 0px #FFFFFF;
 }
 
 .about-description {
@@ -257,6 +258,7 @@ header {
 .project-title {
     font-size: var(--fs-title);
     text-align: center;
+    text-shadow: 4px 3px 0px #ffffff;
 }
 
 .post-wrapper {
@@ -277,6 +279,8 @@ header {
     height: auto;
     border-radius: 10px;
     object-fit: cover;
+    -webkit-box-shadow: 4px 7px 12px 3px rgba(0,0,0,0.63); 
+    box-shadow: 4px 7px 12px 3px rgba(0,0,0,0.63);
 }
 
 .post-texts {
@@ -321,6 +325,7 @@ header {
     font-size: var(--fs-title-big);
     justify-self: center;
     align-self: center;
+    text-shadow: 6px 3px 0px #FFFFFF;
 }
 
 .contact-form {
