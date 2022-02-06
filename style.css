@@ -307,6 +307,11 @@ header {
     color: #9B48FF;
 }
 
+.post-links {
+    font-family: var(--ff-body);
+    font-size: 20px;
+}
+
 
 /* -------------------------- */
 /* -------- Contact --------- */
