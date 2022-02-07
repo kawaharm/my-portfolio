@@ -254,17 +254,36 @@ header {
 }
 
 .skills-wrapper {
-
+    display: block;
+    text-align: center;
+    padding: 0 10px;
 }
 
 .skills-grid {
-    display: grid;
-    /* grid-template-columns: repeat(auto-fill, minmax()) */
+    display: flex;
     list-style: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
 
 }
 
 .skill {
+    text-align: center;
+    font-size: 60px;
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 100px;
+    height: auto;
+    padding: 10px;
+    background-color: var(--bg-primary);
+    box-shadow: 4px 7px 12px 3px rgba(0,0,0,0.63);
+}
+
+.skill-label {
+    font-family: var(--ff-body);
+    font-size: var(--fs-body);
+    color: var(--mainText);
 }
 
 /* -------------------------- */
@@ -338,10 +357,6 @@ header {
 /* -------- Contact --------- */
 /* -------------------------- */
 .contact-wrapper {
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem; */
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -352,6 +367,7 @@ header {
     justify-self: center;
     align-self: center;
     text-shadow: 6px 3px 0px #FFFFFF;
+    margin-right: 30px;
 }
 
 .contact-form {
@@ -388,6 +404,11 @@ label {
 	background-color: var(--btn-color);
 	border-radius: 10px;
 }
+
+@media screen and (max-width: 768px) {
+    .contact-wrapper {
+        grid-template-rows: 1fr 1fr;
+    }
 
 /* -------------------------- */
 /* ----- Responsiveness ----- */
