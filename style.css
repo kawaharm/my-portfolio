@@ -190,7 +190,6 @@ header {
 .greeting-title {
     font-family: var(--ff-secondary);
     font-size: var(--fs-title);
-    /* border: 3px solid var(--secondaryText); */
 }
 
 .greeting-title-top {
@@ -254,9 +253,20 @@ header {
 }
 
 .skills-wrapper {
-    display: block;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 0 10px;
+    margin-top: 40px;
+}
+
+.skills-title {
+    display: inline;
+    font-family: var(--ff-secondary);
+    font-size: var(--fs-h1);
+    color: var(--tertiaryText);
+    margin-bottom: 40px;
+    border-bottom: 1px solid var(--tertiaryText);
 }
 
 .skills-grid {
@@ -264,8 +274,9 @@ header {
     list-style: none;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 25px;
-
+    gap: 50px;
+    margin-top: 40px;
+    max-width: 800px;
 }
 
 .skill {
