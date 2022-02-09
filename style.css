@@ -38,6 +38,10 @@
 /* Set @media roots for changing font sizes */
 /* ****************** */
 
+html {
+    scroll-behavior: smooth;
+}
+
 h1, h2, h3, h4, h5 {
     color: var(--mainText);
     font-family: var(--ff-secondary);
@@ -234,7 +238,7 @@ header {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    padding: 5rem 8rem;
+    padding: 3rem 8rem;
 }
 
 .about-title {
@@ -245,6 +249,7 @@ header {
 .about-description {
     font-family: var(--ff-body);
     font-size: var(--fs-h3);
+    font-weight: var(--fw-strong);
     padding-left: 0;
     padding-right: 1rem;
     width: 500px;
@@ -257,7 +262,7 @@ header {
     flex-direction: column;
     align-items: center;
     padding: 0 10px;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .skills-title {
@@ -265,7 +270,7 @@ header {
     font-family: var(--ff-secondary);
     font-size: var(--fs-h1);
     color: var(--tertiaryText);
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     border-bottom: 1px solid var(--tertiaryText);
 }
 
@@ -275,7 +280,7 @@ header {
     flex-wrap: wrap;
     justify-content: center;
     gap: 50px;
-    margin-top: 40px;
+    margin-top: 30px;
     max-width: 800px;
 }
 
