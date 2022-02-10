@@ -181,6 +181,12 @@ header {
     }
 }
 
+@media screen and (max-width: 420px) {
+    .s1, .s2 {
+        padding: 5rem 1rem;
+    }
+}
+
 /* -------------------------- */
 /* -------- Greeting -------- */
 /* -------------------------- */
@@ -323,6 +329,8 @@ header {
     font-family: var(--ff-body);
     font-size: var(--fs-body);
     color: var(--mainText);
+    display: flex;
+    justify-content: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -351,6 +359,20 @@ header {
     .about-description {
         font-size: var(--fs-body);
         padding: 0 8rem;
+    }
+
+    .skills-grid {
+        gap: 30px;
+        margin-top: 20px;
+    }
+
+    .skill {
+        font-size: 40px;
+        width: 60px;
+    }
+    
+    .skill-label {
+        font-size: 0.6rem;
     }
 }
 
@@ -437,6 +459,34 @@ header {
 
     .post-texts {
         margin: 30px auto;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .project-title {
+        font-size: 4rem;
+    }
+
+    .post {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .post-title {
+        font-size: var(--fs-h3);
+    }
+    
+    .post-tech {
+        font-size: 1.25rem;
+        margin: 10px 0;
+    }
+    
+    .post-description {
+        font-size: var(--fs-body);
+        margin: 10px 0;
+    }
+
+    .post-links {
+        font-size: 1rem;
     }
 }
 
