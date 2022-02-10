@@ -224,8 +224,28 @@ header {
     border-radius: 50%;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 768px) {
+    .greeting-title {
+        font-size: var(--fs-h1);
+    }
 
+    .profile-pic {
+        max-width: 260px;
+        /* width: auto;
+        height: auto; */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .greeting-title {
+        font-size: var(--fs-h1);
+    }
+
+    .profile-pic {
+        max-width: 260px;
+        /* width: auto;
+        height: auto; */
+    }
 }
 
 
@@ -435,7 +455,7 @@ label {
     }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 420px) {
 
 }
 
