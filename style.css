@@ -227,6 +227,7 @@ header {
     color: var(--secondaryText);
     margin-top: 1rem;
     font-size: var(--fs-h2);
+    padding-left: 20px;
 }
 
 .profile-pic {
@@ -260,6 +261,10 @@ header {
 
     .greeting-main-text {
         align-items: center;
+    }
+
+    .greeting-description {
+        padding-left: 0;
     }
 }
 
