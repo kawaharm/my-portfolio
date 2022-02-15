@@ -70,6 +70,14 @@ header {
     padding: .5rem 1rem;
     background: var(--clr-light);
     font-family: var(--ff-body);
+
+}
+
+.nav-logo {
+    font-family: 'Fredoka One', cursive;
+    font-size: var(--fs-h2);
+    color: var(--secondaryText);
+    border-bottom: 1px solid var(--borderColor);
 }
 
 .nav-list {
@@ -77,7 +85,6 @@ header {
     justify-content: space-between;
     align-items: center;
     list-style: none;
-
 }
 
 .nav-item {
