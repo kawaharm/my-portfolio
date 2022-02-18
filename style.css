@@ -52,6 +52,10 @@ p {
     font-family: var(--ff-body);
 }
 
+a {
+    text-decoration: none;
+}
+
 
 /* -------------------------- */
 /* --------- Header --------- */
@@ -521,6 +525,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: 30px;
 }
 
 .contact-title {
@@ -540,8 +545,8 @@ header {
 }
 
 .icon {
-    font-size: 40px;
-    color: var(--btn-color);
+    font-size: 45px;
+    color: #FFFFFF;
 }
 
 .contact-form {
