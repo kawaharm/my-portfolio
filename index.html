@@ -13,7 +13,11 @@
         href="https://fonts.googleapis.com/css2?family=Questrial&family=Fredoka+One&family=Yanone+Kaffeesatz:wght@500&family=Zen+Kurenaido&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
-
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
 </head>
 
 <body>
@@ -50,7 +54,7 @@
             <div class="greeting-wrapper">
                 <img src="/img/profile-pic.JPG" alt="profile picture" class="profile-pic">
                 <div class="greeting-main-text">
-                    <div class="greeting-title">
+                    <div class="greeting-title" data-scroll>
                         <h1 class="greeting-title-top">Masaru</h1>
                         <h1 class="greeting-title-bottom">Kawaharada</h1>
                     </div>
@@ -66,8 +70,8 @@
     <section class="s2" id="about">
         <div class="main-container">
             <div class="about-wrapper">
-                <h1 class="about-title">About</h1>
-                <p class="about-description">
+                <h1 class="about-title hidden">About</h1>
+                <p class="about-description hidden">
                     Ambitious software engineer with experience in the SaaS industry. I find great
                     joy working cross-functionally to tackle complex problems through reuseable, well-tested
                     code optimized for performance and scalability. Creative and charismatic are what 
@@ -79,47 +83,47 @@
                     Tech Stack
                 </div>
                 <ul class="skills-grid">
-                    <li class="skill">
+                    <li class="skill hidden-skill" style="--order: 3">
                         <i class="devicon-react-original colored"></i>
                         <div class="skill-label">React</div>
                     </li>
-                    <li class="skill">
+                    <li class="skill hidden-skill" style="--order: 2.5">
                         <i class="devicon-javascript-plain colored"></i>
                         <div class="skill-label">JS</div>
                     </li>
-                    <li class="skill">
+                    <li class="skill hidden-skill" style="--order: 2">
                         <i class="devicon-ruby-plain-wordmark colored"></i>
                         <div class="skill-label">Ruby</div>
                     </li>
-                    <li class="skill">
+                    <li class="skill hidden-skill" style="--order: 1.5">
                         <i class="devicon-rails-plain-wordmark colored"></i>
                         <div class="skill-label">Rails</div>
                     </li>
-                    <li class="skill">
+                    <li class="skill hidden-skill" style="--order: 1">
                         <i class="devicon-python-plain colored"></i>
                         <div class="skill-label">Python</div>
                     </li>
-                    <li class="skill">
+                    <li class="skill hidden-skill" style="--order: 3.5">
                         <i class="devicon-nodejs-plain-wordmark"></i>
                         <div class="skill-label">Node.js</div>
                     </li>
-                    <li class="skill">
+                    <li class="skill hidden-skill" style="--order: 3">
                         <i class="devicon-postgresql-plain colored"></i>
                         <div class="skill-label">PostgreSQL</div>
                     </li>
-                    <li class="skill">
+                    <li class="skill hidden-skill" style="--order: 2.5">
                         <i class="devicon-django-line colored"></i>
                         <div class="skill-label">Django</div>
                     </li>
-                    <li class="skill">
+                    <li class="skill hidden-skill" style="--order: 2">
                         <i class="devicon-html5-plain-wordmark colored"></i>
                         <div class="skill-label">HTML</div>
                     </li>
-                    <li class="skill">
+                    <li class="skill hidden-skill" style="--order: 1.5">
                         <i class="devicon-css3-plain-wordmark colored"></i>
                         <div class="skill-label">CSS</div>
                     </li>
-                    <!-- <li class="skill">
+                    <!-- <li class="skill hidden-skill" style="--order: 11">
                         <i class="devicon-mongodb-plain colored"></i>
                         <div class="skill-label">MongoDB</div>
                     </li> -->
@@ -132,10 +136,10 @@
     <section class="s1" id="projects">
         <div class="main-container">
             <div class="project-wrapper">
-                <h1 class="project-title">Check out my projects!</h1>
+                <h1 class="project-title" data-scroll>Check out my projects!</h1>
                 <div class="post-wrapper">
-
-                    <div class="post">
+                    
+                    <div class="post backInLeft" data-scroll>
                         <img src="./img/stonk-about-it.png" class="thumbnail" alt="pokemon trivia game">
                         <div class="post-texts">
                             <h3 class="post-title">Let's Stonk About It</h3>
@@ -161,7 +165,7 @@
                         </div>
                     </div>
 
-                    <div class="post">
+                    <div class="post backInLeft" data-scroll>
                         <img src="./img/pokemon-trivia-game.png" class="thumbnail" alt="pokemon trivia game">
                         <div class="post-texts">
                             <h3 class="post-title">Who Wants To Be A Pokemon Master</h3>
@@ -187,7 +191,7 @@
                         </div>
                     </div>
 
-                    <div class="post">
+                    <div class="post backInLeft" data-scroll>
                         <img src="./img/campus-bops.png" class="thumbnail" alt="pokemon trivia game">
                         <div class="post-texts">
                             <h3 class="post-title">Campus Bops</h3>
@@ -249,7 +253,7 @@
     <!-- Contact -->
     <section class="s2" id="contact">
         <div class="main-container">
-            <div class="contact-wrapper">
+            <div class="contact-wrapper fadeIn" data-scroll>
                 <div class="contact-links">
                     <h1 class="contact-title">Contact</h1>
                     <div class="contact-icons">
@@ -281,9 +285,7 @@
             </div>
         </div>
     </section>
-
-    <script src="./script.js"></script>
-
+    <script src="/dist/main.js"></script>
 </body>
 
 </html>

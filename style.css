@@ -619,8 +619,64 @@ textarea {
 /* ----- Responsiveness ----- */
 /* -------------------------- */
 
-
-@media screen and (max-width: 420px) {
-
+.hidden, .hidden-skill {
+    opacity: 0;
+    transition: all 1s;
+    filter: blur(5px);
+    transform: translateX(-100%);
 }
 
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.show-skill {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+    transition-delay: calc(200ms*var(--order));
+}
+
+/* Twirl */
+/* [data-scroll] .char {
+	transition: all var(--transition-speed) calc((var(--char-index) + 1) * var(--transition-step));
+}
+
+.twirl .char {
+	animation-duration: calc(var(--transition-speed) * 2);
+	animation-fill-mode: both;
+	animation-delay: calc((var(--char-total) - var(--char-index)) * var(--transition-step));
+	animation-delay: calc((var(--char-index) * var(--transition-step)) * 1);
+	animation-timing-function: var(--ease-elastic-5);
+}
+
+.twirl [data-scroll="in"] .char {
+	animation-name: twirl;
+}
+
+@keyframes twirl {
+	0% {
+		opacity: 0;
+		transform: translateY(200%) rotateY(0deg);
+	}
+	25% {
+		opacity: 1;
+	}
+	100% {
+		transform: translateY(0%) rotateY(360deg);
+	}
+} */
+
+[data-scroll] {
+    transition: all 2s;
+}
+.project-title[data-scroll="in"] {
+    opacity: 1;
+    transform: translateX(0);
+}
+.project-title[data-scroll="out"] {
+    opacity: 0;
+    transform: translateX(-100%)
+}
