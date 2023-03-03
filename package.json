@@ -3,8 +3,10 @@
     "animate.css": "^4.1.1",
     "devicon": "^2.14.0",
     "scroll-out": "^2.2.12",
-    "splitting": "^1.0.6",
     "webpack": "^5.75.0",
     "webpack-cli": "^5.0.1"
+  },
+  "scripts": {
+    "build": "webpack"
   }
 }

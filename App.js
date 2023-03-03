@@ -19,40 +19,10 @@ navLink.forEach((link) =>
   })
 );
 
-// Scroll Animations
-const aboutObserver = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("show");
-    } else {
-      entry.target.classList.remove("show");
-    }
-  });
-});
-
-const hiddenElements = document.querySelectorAll(".hidden");
-hiddenElements.forEach((el) => aboutObserver.observe(el));
-
-const skillObserver = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("show-skill");
-    } else {
-      entry.target.classList.remove("show-skill");
-    }
-  });
-});
-
-const hiddenSkills = document.querySelectorAll(".hidden-skill");
-hiddenSkills.forEach((el) => skillObserver.observe(el));
-
-const projectTitleFadeIn = [{ transform: "translateX(0)" }, { opacity: 1 }];
-
-const projectTitleFadeOut = [
-  { transform: "translateX(-100%)" },
-  { opacity: 0 },
-];
-
+/*******************************
+ * ******** ANIMATIONS *********
+ * *****************************/
+// GREETING SECTION
 ScrollOut({
   targets: ".greeting-title",
   onShown: function (el) {
@@ -66,6 +36,39 @@ ScrollOut({
     el.style.setProperty("--animate-delay", "2s");
   },
 });
+
+// ABOUT SECTION
+const aboutObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    }
+  });
+});
+
+const hiddenElements = document.querySelectorAll(".hidden");
+hiddenElements.forEach((el) => aboutObserver.observe(el));
+
+// SKILLS SECTION
+const skillObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show-skill");
+    } else {
+      entry.target.classList.remove("show-skill");
+    }
+  });
+});
+
+const hiddenSkills = document.querySelectorAll(".hidden-skill");
+hiddenSkills.forEach((el) => skillObserver.observe(el));
+
+// PROJECTS SECTION
+const projectTitleFadeIn = [{ transform: "translateX(0)" }, { opacity: 1 }];
+const projectTitleFadeOut = [
+  { transform: "translateX(-100%)" },
+  { opacity: 0 },
+];
 
 ScrollOut({
   target: ".project-title",
@@ -85,6 +88,7 @@ ScrollOut({
   },
 });
 
+// CONTACT SECTION
 ScrollOut({
   targets: ".fadeIn",
   once: true,
