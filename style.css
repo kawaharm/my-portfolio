@@ -306,7 +306,7 @@ header {
     font-weight: var(--fw-strong);
     padding-left: 0;
     padding-right: 1rem;
-    width: 500px;
+    min-width: 400px;
     color: var(--tertiaryText);
     line-height: 1.3;
 }
@@ -627,7 +627,7 @@ textarea {
     transform: translateX(-100%);
 }
 
-.show {
+.show-about {
     opacity: 1;
     filter: blur(0);
     transform: translateX(0);
