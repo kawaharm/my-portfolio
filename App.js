@@ -42,8 +42,6 @@ const aboutObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       entry.target.classList.add("show-about");
-    } else {
-      entry.target.classList.remove("show-about");
     }
   });
 });
