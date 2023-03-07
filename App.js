@@ -27,13 +27,39 @@ ScrollOut({
   targets: ".greeting-title",
   onShown: function (el) {
     // remove the class
-    el.classList.remove("animate__animated", "animate__bounce");
+    el.classList.remove(
+      "animate__animated",
+      "animate__bounce",
+      "animate__infinite"
+    );
     // force reflow
     void el.offsetWidth;
     // re-add the animated cl
-    el.classList.add("animate__animated", "animate__bounce");
-    el.style.setProperty("--animate-repeat", "infinite");
-    el.style.setProperty("--animate-delay", "2s");
+    el.classList.add(
+      "animate__animated",
+      "animate__bounce",
+      "animate__infinite"
+    );
+  },
+});
+
+ScrollOut({
+  targets: ".greeting-description",
+  onShown: function (el) {
+    // remove the class
+    el.classList.remove(
+      "animate__animated",
+      "animate__fadeInRight",
+      "animate__delay-1s"
+    );
+    // force reflow
+    void el.offsetWidth;
+    // re-add the animated cl
+    el.classList.add(
+      "animate__animated",
+      "animate__fadeInRight",
+      "animate__delay-1s"
+    );
   },
 });
 
