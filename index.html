@@ -1,227 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Masaru's Website</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Questrial&family=Fredoka+One&family=Yanone+Kaffeesatz:wght@500&family=Zen+Kurenaido&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
+      href="https://fonts.googleapis.com/css2?family=Questrial&family=Fredoka+One&family=Yanone+Kaffeesatz:wght@500&family=Zen+Kurenaido&display=swap"
+      rel="stylesheet"
+    />
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav class="nav" role="navigation">
-            <p class="nav-logo">
-                mk
-            </p>
-            <ul class="nav-list">
-                <li class="nav-item">
-                    <a href="#home" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#about" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#projects" class="nav-link">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contact" class="nav-link">Contact</a>
-                </li>
-            </ul>
-            <div class="hamburger">
-                <span class="hamburger-bar"></span>
-                <span class="hamburger-bar"></span>
-                <span class="hamburger-bar"></span>
-            </div>
-        </nav>
+      <nav class="nav" role="navigation">
+        <p class="nav-logo">mk</p>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#home" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#projects" class="nav-link">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </div>
+      </nav>
     </header>
 
     <!-- Greeting -->
     <section class="s1" id="home">
-        <div class="main-container">
-            <div class="greeting-wrapper">
-                <img src="/img/profile-pic.JPG" alt="profile picture" class="profile-pic">
-                <div class="greeting-main-text">
-                    <div class="greeting-title" data-scroll>
-                        <h1 class="greeting-title-top">Masaru</h1>
-                        <h1 class="greeting-title-bottom">Kawaharada</h1>
-                    </div>
-                    <h3 class="greeting-description">
-                        Software Engineer
-                    </h3>
-                </div>
+      <div class="container">
+        <div class="greeting-wrapper parallax-wrapper">
+          <div class="parallax-layer base-layer">
+            <img class="bg-1" src="/img/IMG_3832.JPG" alt="bckgnd pic" />
+          </div>
+          <div class="parallax-layer top-layer">
+            <!-- <img
+              src="/img/profile-pic.JPG"
+              alt="profile picture"
+              class="profile-pic"
+            /> -->
+            <div class="greeting-main-text">
+              <div class="greeting-title" data-scroll>
+                <h1 class="greeting-title-top">Masaru</h1>
+                <h1 class="greeting-title-bottom">Kawaharada</h1>
+              </div>
+              <h3 class="greeting-description">Software Engineer</h3>
             </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- About Me -->
     <section class="s2" id="about">
-        <div class="main-container">
-            <div class="about-wrapper">
-                <h1 class="about-title hidden">About</h1>
-                <p class="about-description hidden">
-                    Ambitious software engineer with experience in the SaaS industry. I find great
-                    joy working cross-functionally to tackle complex problems through reuseable, well-tested
-                    code optimized for performance and scalability. Creative and charismatic are what 
-                    defines me and drives my passion for developing innovative solutions using cutting-edge tools.
-                </p>
-            </div>
-            <div class="skills-wrapper">
-                <div class="skills-title">
-                    Tech Stack
-                </div>
-                <ul class="skills-grid">
-                    <li class="skill hidden-skill" style="--order: 3">
-                        <i class="devicon-react-original colored"></i>
-                        <div class="skill-label">React</div>
-                    </li>
-                    <li class="skill hidden-skill" style="--order: 2.5">
-                        <i class="devicon-javascript-plain colored"></i>
-                        <div class="skill-label">JS</div>
-                    </li>
-                    <li class="skill hidden-skill" style="--order: 2">
-                        <i class="devicon-ruby-plain-wordmark colored"></i>
-                        <div class="skill-label">Ruby</div>
-                    </li>
-                    <li class="skill hidden-skill" style="--order: 1.5">
-                        <i class="devicon-rails-plain-wordmark colored"></i>
-                        <div class="skill-label">Rails</div>
-                    </li>
-                    <li class="skill hidden-skill" style="--order: 1">
-                        <i class="devicon-python-plain colored"></i>
-                        <div class="skill-label">Python</div>
-                    </li>
-                    <li class="skill hidden-skill" style="--order: 3.5">
-                        <i class="devicon-nodejs-plain-wordmark"></i>
-                        <div class="skill-label">Node.js</div>
-                    </li>
-                    <li class="skill hidden-skill" style="--order: 3">
-                        <i class="devicon-postgresql-plain colored"></i>
-                        <div class="skill-label">PostgreSQL</div>
-                    </li>
-                    <li class="skill hidden-skill" style="--order: 2.5">
-                        <i class="devicon-django-line colored"></i>
-                        <div class="skill-label">Django</div>
-                    </li>
-                    <li class="skill hidden-skill" style="--order: 2">
-                        <i class="devicon-html5-plain-wordmark colored"></i>
-                        <div class="skill-label">HTML</div>
-                    </li>
-                    <li class="skill hidden-skill" style="--order: 1.5">
-                        <i class="devicon-css3-plain-wordmark colored"></i>
-                        <div class="skill-label">CSS</div>
-                    </li>
-                    <!-- <li class="skill hidden-skill" style="--order: 11">
+      <div class="container">
+        <div class="about-wrapper">
+          <h1 class="about-title hidden">About</h1>
+          <p class="about-description hidden">
+            Ambitious software engineer with experience in the SaaS industry. I
+            find great joy working cross-functionally to tackle complex problems
+            through reuseable, well-tested code optimized for performance and
+            scalability. Creative and charismatic are what defines me and drives
+            my passion for developing innovative solutions using cutting-edge
+            tools.
+          </p>
+        </div>
+        <div class="skills-wrapper">
+          <div class="skills-title">Tech Stack</div>
+          <ul class="skills-grid">
+            <li class="skill hidden-skill" style="--order: 3">
+              <i class="devicon-react-original colored"></i>
+              <div class="skill-label">React</div>
+            </li>
+            <li class="skill hidden-skill" style="--order: 2.5">
+              <i class="devicon-javascript-plain colored"></i>
+              <div class="skill-label">JS</div>
+            </li>
+            <li class="skill hidden-skill" style="--order: 2">
+              <i class="devicon-ruby-plain-wordmark colored"></i>
+              <div class="skill-label">Ruby</div>
+            </li>
+            <li class="skill hidden-skill" style="--order: 1.5">
+              <i class="devicon-rails-plain-wordmark colored"></i>
+              <div class="skill-label">Rails</div>
+            </li>
+            <li class="skill hidden-skill" style="--order: 1">
+              <i class="devicon-python-plain colored"></i>
+              <div class="skill-label">Python</div>
+            </li>
+            <li class="skill hidden-skill" style="--order: 3.5">
+              <i class="devicon-nodejs-plain-wordmark"></i>
+              <div class="skill-label">Node.js</div>
+            </li>
+            <li class="skill hidden-skill" style="--order: 3">
+              <i class="devicon-postgresql-plain colored"></i>
+              <div class="skill-label">PostgreSQL</div>
+            </li>
+            <li class="skill hidden-skill" style="--order: 2.5">
+              <i class="devicon-django-line colored"></i>
+              <div class="skill-label">Django</div>
+            </li>
+            <li class="skill hidden-skill" style="--order: 2">
+              <i class="devicon-html5-plain-wordmark colored"></i>
+              <div class="skill-label">HTML</div>
+            </li>
+            <li class="skill hidden-skill" style="--order: 1.5">
+              <i class="devicon-css3-plain-wordmark colored"></i>
+              <div class="skill-label">CSS</div>
+            </li>
+            <!-- <li class="skill hidden-skill" style="--order: 11">
                         <i class="devicon-mongodb-plain colored"></i>
                         <div class="skill-label">MongoDB</div>
                     </li> -->
-                </ul>
-            </div>
+          </ul>
         </div>
+      </div>
     </section>
 
     <!-- Projects -->
     <section class="s1" id="projects">
-        <div class="main-container">
-            <div class="project-wrapper">
-                <h1 class="project-title" data-scroll>Check out my projects!</h1>
-                <div class="post-wrapper">
-                    
-                    <div class="post backInLeft" data-scroll>
-                        <img src="./img/stonk-about-it.png" class="thumbnail" alt="pokemon trivia game">
-                        <div class="post-texts">
-                            <h3 class="post-title">Let's Stonk About It</h3>
-                            <h5 class="post-tech">Technologies used:
-                                <span class="tech-stack">React</span>
-                                ,
-                                <span class="tech-stack">Python</span>
-                                ,
-                                <span class="tech-stack">Django</span>
-                                ,
-                                <span class="tech-stack">REST API</span>
-                            </h5>
-                            <p class="post-description">
-                                Interactive data visualization tool to display the emotional impressions of a
-                                company on Twitter using sentiment analysis and compare it with its stock
-                                performance.
-                            </p>
-                            <div class="post-links">
-                                <a href="https://lets-stonk-about-it.herokuapp.com/">Live Site</a>
-                                <span> | </span>
-                                <a href="https://github.com/kawaharm/lets-stonk-about-it">Github (frontend)</a>
-                                <span> | </span>
-                                <a href="https://github.com/kawaharm/lets-stonk-about-it-backend">Github (backend)</a>
-                            </div>
-                        </div>
-                    </div>
+      <div class="container">
+        <div class="project-wrapper">
+          <h1 class="project-title" data-scroll>Check out my projects!</h1>
+          <div class="post-wrapper">
+            <div class="post backInLeft" data-scroll>
+              <img
+                src="./img/stonk-about-it.png"
+                class="thumbnail"
+                alt="pokemon trivia game"
+              />
+              <div class="post-texts">
+                <h3 class="post-title">Let's Stonk About It</h3>
+                <h5 class="post-tech">
+                  Technologies used:
+                  <span class="tech-stack">React</span>
+                  ,
+                  <span class="tech-stack">Python</span>
+                  ,
+                  <span class="tech-stack">Django</span>
+                  ,
+                  <span class="tech-stack">REST API</span>
+                </h5>
+                <p class="post-description">
+                  Interactive data visualization tool to display the emotional
+                  impressions of a company on Twitter using sentiment analysis
+                  and compare it with its stock performance.
+                </p>
+                <div class="post-links">
+                  <a href="https://lets-stonk-about-it.herokuapp.com/"
+                    >Live Site</a
+                  >
+                  <span> | </span>
+                  <a href="https://github.com/kawaharm/lets-stonk-about-it"
+                    >Github (frontend)</a
+                  >
+                  <span> | </span>
+                  <a
+                    href="https://github.com/kawaharm/lets-stonk-about-it-backend"
+                    >Github (backend)</a
+                  >
+                </div>
+              </div>
+            </div>
 
-                    <div class="post backInLeft" data-scroll>
-                        <img src="./img/pokemon-trivia-game.png" class="thumbnail" alt="pokemon trivia game">
-                        <div class="post-texts">
-                            <h3 class="post-title">Who Wants To Be A Pokemon Master</h3>
-                            <h5 class="post-tech">
-                                Technologies used:
-                                <span class="tech-stack">HTML</span>
-                                ,
-                                <span class="tech-stack">CSS</span>
-                                ,
-                                <span class="tech-stack">Vanilla JS</span>
-                            </h5>
-                            <p class="post-description">
-                                A crossover of two of my childhood pastimes, players take the hot seat against Regis
-                                Philbin
-                                as they answer multiple-choice questions using a RPG battle system similar to
-                                the Generation I Pokemon games.
-                            </p>
-                            <div class="post-links">
-                                <a href="https://kawaharm.github.io/who-wants-to-be-a-pokemon-master/">Live Site</a>
-                                <span> | </span>
-                                <a href="https://github.com/kawaharm/who-wants-to-be-a-pokemon-master">Github</a>
-                            </div>
-                        </div>
-                    </div>
+            <div class="post backInLeft" data-scroll>
+              <img
+                src="./img/pokemon-trivia-game.png"
+                class="thumbnail"
+                alt="pokemon trivia game"
+              />
+              <div class="post-texts">
+                <h3 class="post-title">Who Wants To Be A Pokemon Master</h3>
+                <h5 class="post-tech">
+                  Technologies used:
+                  <span class="tech-stack">HTML</span>
+                  ,
+                  <span class="tech-stack">CSS</span>
+                  ,
+                  <span class="tech-stack">Vanilla JS</span>
+                </h5>
+                <p class="post-description">
+                  A crossover of two of my childhood pastimes, players take the
+                  hot seat against Regis Philbin as they answer multiple-choice
+                  questions using a RPG battle system similar to the Generation
+                  I Pokemon games.
+                </p>
+                <div class="post-links">
+                  <a
+                    href="https://kawaharm.github.io/who-wants-to-be-a-pokemon-master/"
+                    >Live Site</a
+                  >
+                  <span> | </span>
+                  <a
+                    href="https://github.com/kawaharm/who-wants-to-be-a-pokemon-master"
+                    >Github</a
+                  >
+                </div>
+              </div>
+            </div>
 
-                    <div class="post backInLeft" data-scroll>
-                        <img src="./img/campus-bops.png" class="thumbnail" alt="pokemon trivia game">
-                        <div class="post-texts">
-                            <h3 class="post-title">Campus Bops</h3>
-                            <h5 class="post-tech">Technologies used:
-                                <span class="tech-stack">React</span>
-                                ,
-                                <span class="tech-stack">Node</span>
-                                ,
-                                <span class="tech-stack">Express</span>
-                                ,
-                                <span class="tech-stack">PostgreSQL</span>
-                                ,
-                                <span class="tech-stack">REST API</span>
-                            </h5>
-                            <p class="post-description">
-                                Helps college students discover popular songs played around campus and vote for their
-                                favorite using a NCAA Tournament-style voting system. Songs can be previewed via
-                                Spotify API and cached in Postgres.
-                            </p>
-                            <div class="post-links">
-                                <a href="https://campus-bops.herokuapp.com/">Live Site</a>
-                                <span> | </span>
-                                <a href="https://github.com/kawaharm/campus_bops_v2_server">Github</a>
-                            </div>
-                        </div>
-                    </div>
+            <div class="post backInLeft" data-scroll>
+              <img
+                src="./img/campus-bops.png"
+                class="thumbnail"
+                alt="pokemon trivia game"
+              />
+              <div class="post-texts">
+                <h3 class="post-title">Campus Bops</h3>
+                <h5 class="post-tech">
+                  Technologies used:
+                  <span class="tech-stack">React</span>
+                  ,
+                  <span class="tech-stack">Node</span>
+                  ,
+                  <span class="tech-stack">Express</span>
+                  ,
+                  <span class="tech-stack">PostgreSQL</span>
+                  ,
+                  <span class="tech-stack">REST API</span>
+                </h5>
+                <p class="post-description">
+                  Helps college students discover popular songs played around
+                  campus and vote for their favorite using a NCAA
+                  Tournament-style voting system. Songs can be previewed via
+                  Spotify API and cached in Postgres.
+                </p>
+                <div class="post-links">
+                  <a href="https://campus-bops.herokuapp.com/">Live Site</a>
+                  <span> | </span>
+                  <a href="https://github.com/kawaharm/campus_bops_v2_server"
+                    >Github</a
+                  >
+                </div>
+              </div>
+            </div>
 
-                    <!-- <div class="post">
+            <!-- <div class="post">
                         <img src="./img/nft-world.png" class="thumbnail" alt="pokemon trivia game">
                         <div class="post-texts">
                             <h3 class="post-title">NFT World</h3>
@@ -245,49 +282,61 @@
                             </div>
                         </div>
                     </div> -->
-
-
-                </div>
-            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Contact -->
     <section class="s2" id="contact">
-        <div class="main-container">
-            <div class="contact-wrapper fadeIn" data-scroll>
-                <div class="contact-links">
-                    <h1 class="contact-title">Contact</h1>
-                    <div class="contact-icons">
-                        <a href="https://github.com/kawaharm">
-                            <i class="devicon-github-original icon"></i>
-                            <div class="icon-name">Github</div>
-                        </a>
-                        <a href="https://www.linkedin.com/in/masaruk/">
-                            <i class="devicon-linkedin-plain icon"></i>
-                            <div class="icon-name">LinkedIn</div>
-                        </a>
-                        <a href="./pdf/MasaruKawaharada-Resume.pdf">
-                            <img src="https://img.icons8.com/ios-filled/50/272368/set-as-resume.png">
-                            <div class="icon-name">Resume</div>
-                        </a>
-                    </div>
-                </div>
-                <form class="contact-form" action="https://formspree.io/f/xgedklrn" method="POST">
-                    <label>NAME:</label>
-                    <input type="text" name="name" class="contact-field">
-                    <label>EMAIL:</label>
-                    <input type="email" name="email" class="contact-field">
-                    <label>SUBJECT:</label>
-                    <input type="text" name="subject" class="contact-field" placeholder="/* Subject Here */">
-                    <label>MESSAGE:</label>
-                    <textarea name="message" class="contact-field" placeholder="Hey Masaru,"></textarea>
-                    <input type="submit" value="SEND" class="submit-btn">
-                </form>
+      <div class="container">
+        <div class="contact-wrapper fadeIn" data-scroll>
+          <div class="contact-links">
+            <h1 class="contact-title">Contact</h1>
+            <div class="contact-icons">
+              <a href="https://github.com/kawaharm">
+                <i class="devicon-github-original icon"></i>
+                <div class="icon-name">Github</div>
+              </a>
+              <a href="https://www.linkedin.com/in/masaruk/">
+                <i class="devicon-linkedin-plain icon"></i>
+                <div class="icon-name">LinkedIn</div>
+              </a>
+              <a href="./pdf/MasaruKawaharada-Resume.pdf">
+                <img
+                  src="https://img.icons8.com/ios-filled/50/272368/set-as-resume.png"
+                />
+                <div class="icon-name">Resume</div>
+              </a>
             </div>
+          </div>
+          <form
+            class="contact-form"
+            action="https://formspree.io/f/xgedklrn"
+            method="POST"
+          >
+            <label>NAME:</label>
+            <input type="text" name="name" class="contact-field" />
+            <label>EMAIL:</label>
+            <input type="email" name="email" class="contact-field" />
+            <label>SUBJECT:</label>
+            <input
+              type="text"
+              name="subject"
+              class="contact-field"
+              placeholder="/* Subject Here */"
+            />
+            <label>MESSAGE:</label>
+            <textarea
+              name="message"
+              class="contact-field"
+              placeholder="Hey Masaru,"
+            ></textarea>
+            <input type="submit" value="SEND" class="submit-btn" />
+          </form>
         </div>
+      </div>
     </section>
     <script src="/build/main.bundle.js"></script>
-</body>
-
+  </body>
 </html>

@@ -172,15 +172,22 @@ header {
 /* -------------------------- */
 /* ---------- Main ---------- */
 /* -------------------------- */
-.main-container {
+.container {
     width: 1200px;
     margin: 0 auto;
+}
+
+.bg-1 {
+    width: 100%;
+    position: absolute;
+    overflow: auto;
 }
 
 .s1, .s2 {
     border: 1px solid var(--borderColor);
     overflow: auto;
     padding: 10rem 2.5rem;
+    height: 100vh;
 }
 
 .s1 {
@@ -192,7 +199,7 @@ header {
 }
 
 @media screen and (max-width: 1200px) {
-    .main-container {
+    .container {
         width: 95%;
     }
 }
@@ -210,6 +217,25 @@ header {
     display: flex;
     justify-content: center;
     gap: 1rem;
+}
+
+.parallax-wrapper {
+    perspective: 300px;
+    z-index: -1;
+}
+
+.parallax-layer {
+    position: absolute;
+    inset: 0;
+}
+
+.base-layer {
+    /* scale calculation: 1 + ((Z transform value * -1) / perspective) */
+    transform: translateZ(-300px) scale(2);
+}
+
+.mid-layer {
+    transform: translateZ(0);
 }
 
 .greeting-main-text {
