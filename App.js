@@ -27,24 +27,17 @@ ScrollOut({
   targets: ".greeting-title",
   onShown: function (el) {
     // remove the class
-    el.classList.remove(
-      "animate__animated",
-      "animate__bounce",
-      "animate__infinite"
-    );
+    el.classList.remove("animate__animated", "animate__bounce");
     // force reflow
     void el.offsetWidth;
     // re-add the animated cl
-    el.classList.add(
-      "animate__animated",
-      "animate__bounce",
-      "animate__infinite"
-    );
+    el.classList.add("animate__animated", "animate__bounce");
   },
 });
 
 ScrollOut({
   targets: ".greeting-description",
+  once: true,
   onShown: function (el) {
     // remove the class
     el.classList.remove(
