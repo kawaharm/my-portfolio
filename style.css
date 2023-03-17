@@ -179,15 +179,12 @@ header {
 
 .bg-1 {
     width: 100%;
-    position: absolute;
-    overflow: auto;
 }
 
 .s1, .s2 {
     border: 1px solid var(--borderColor);
     overflow: auto;
     padding: 10rem 2.5rem;
-    height: 100vh;
 }
 
 .s1 {
@@ -216,19 +213,17 @@ header {
 .greeting-wrapper {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 1rem;
+}
+
+.parallax-wrapper {
+    perspective: 300px;
 }
 
 .parallax-group {
     position: relative;
     height: 100vh;
-}
-
-.parallax-wrapper {
-    height: 100vh;
-    overflow-x: hidden;
-    overflow-y: auto;
-    perspective: 300px;
 }
 
 .parallax-layer {
@@ -238,11 +233,11 @@ header {
 
 .base-layer {
     /* scale calculation: 1 + ((Z transform value * -1) / perspective) */
-    transform: translateZ(-300px) scale(2);
+    /* transform: translateZ(-300px) scale(2); */
 }
 
 .mid-layer {
-    transform: translateZ(0);
+    /* transform: translateZ(0); */
 }
 
 .greeting-main-text {
